@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="/" method="get">
+    <label for="input-field">Geben Sie ihren Namen ein:</label>
+    <input type="text" id="input-field" name="userInput">
+    <button type="submit">Absenden</button>
+</form>
+
+<div th:text="${name}"></div>
+
+</body>
+</html>
